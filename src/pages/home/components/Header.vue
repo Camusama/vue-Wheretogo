@@ -5,12 +5,15 @@
    </div>
    <div class="header-input">
    <span class="iconfont">&#xe632</span>输入城市景点/游览主题</div>
-   <div class="header-right ">城市<span class="iconfont arr-icon">&#xe64a</span></div>
+   <div class="header-right ">{{ this.city }}<span class="iconfont arr-icon">&#xe64a</span></div>
   </div>
 </template>
 
 <script>
 export default {
+  props:{
+    city:String
+  },
   data () {
     return {
 
