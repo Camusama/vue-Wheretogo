@@ -5,19 +5,18 @@
    </div>
    <div class="header-input">
    <span class="iconfont">&#xe632</span>输入城市景点/游览主题</div>
-   <div class="header-right ">{{ this.city }}<span class="iconfont arr-icon">&#xe64a</span></div>
+   <router-link to="/city">
+     <div class="header-right ">{{ this.city }}<span class="iconfont arr-icon">&#xe64a</span></div>
+   </router-link>
+
   </div>
 </template>
 
 <script>
+import {mapState} from 'vuex'
 export default {
-  props:{
-    city:String
-  },
-  data () {
-    return {
-
-    }
+  computed :{
+    ...mapState(['city'])
   }
 }
 </script>
@@ -45,8 +44,10 @@ export default {
       border-radius:5px
       color:#ccc
     .header-right
-      width:1.24rem
+      min-width:1.04rem
+      padding:0 .1rem
       text-align:center
+      color:#fff
       .arr-icon
         font-size:.24rem
 </style>

@@ -6,15 +6,12 @@
 
 <script>
 export default {
-  data () {
-    return {
 
-    }
-  }
 }
 </script>
 
 
-<style>
+<style lang="stylus" scoped>
+  @import '~styles/varibles.styl'
 
 </style>
