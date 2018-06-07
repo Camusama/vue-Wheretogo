@@ -48,6 +48,9 @@
       },
       activated (){
         window.addEventListener('scroll',this.handleScroll)
+      },
+      deactivated(){
+        window.removeEventListener('scroll',this.handleScroll)//全局事件解绑
       }
     }
 </script>
