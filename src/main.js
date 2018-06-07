@@ -10,6 +10,7 @@ import 'swiper/dist/css/swiper.css'
 import './assets/styles/reset.css'
 import './assets/styles/border.css'
 import './assets/styles/iconfont.css'
+import  'babel-polyfill'
 
 Vue.use(VueAwesomeSwiper)
 Vue.config.productionTip = false

@@ -46,10 +46,10 @@
           }
         }
       },
-      activated (){
+      mounted (){
         window.addEventListener('scroll',this.handleScroll)
       },
-      deactivated(){
+      unmounted (){
         window.removeEventListener('scroll',this.handleScroll)//全局事件解绑
       }
     }
